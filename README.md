@@ -9,7 +9,7 @@ I build business systems on Cloudflare's edge, plus small Windows and browser to
 <br/>
 
 [![ydnw6](https://img.shields.io/badge/GitHub-ydnw6-181717?style=for-the-badge&logo=github)](https://github.com/ydnw6)
-[![aaoqqqdd](https://img.shields.io/badge/GeekSlope-aaoqqqdd-181717?style=for-the-badge&logo=github)](https://github.com/aaoqqqdd)
+[![Velniko](https://img.shields.io/badge/GeekSlope-Velniko-181717?style=for-the-badge&logo=github)](https://github.com/Velniko)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-Developer-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
 </div>
@@ -18,10 +18,11 @@ I build business systems on Cloudflare's edge, plus small Windows and browser to
 
 ## 👨‍💻 About Me
 
-My work is split across two GitHub accounts:
+Where my code lives:
 
 - **[`ydnw6`](https://github.com/ydnw6)** — my own open-source tools: Windows desktop apps and a browser extension
-- **[`aaoqqqdd`](https://github.com/aaoqqqdd)** — GeekSlope, a computer rental business: the rental platform, its website, the device client and the monitoring stack
+- **[`Velniko`](https://github.com/Velniko)** — organization for GeekSlope, a computer rental business: the rental platform, its website and the device client
+- **[`aaoqqqdd`](https://github.com/aaoqqqdd)** — MonitorFlare, the uptime monitor and status page
 
 What I spend most of my time on:
 
@@ -73,7 +74,7 @@ What I spend most of my time on:
 
 ## 🏢 GeekSlope — Computer Rental Platform
 
-> Repositories under **[aaoqqqdd](https://github.com/aaoqqqdd)**. Four parts, one shared D1 database.
+> Repositories in the **[Velniko](https://github.com/Velniko)** organization. Three parts, one shared D1 database.
 
 ```text
               Cloudflare D1 (shared database)
@@ -83,11 +84,9 @@ What I spend most of my time on:
    rent-web             rent              rent-app
    public website   platform & admin   Windows device client
    (Hono SSR)       (Workers + Hono)   (.NET 8, via /api/device-agent)
-
-   monitorflare ── watches all of the above
 ```
 
-### 💻 [rent](https://github.com/aaoqqqdd/rent) — Rental management system
+### 💻 [rent](https://github.com/Velniko/rent) — Rental management system
 
 The core platform. It runs the full rental lifecycle: application, contract, payment, delivery, return, refund.
 
@@ -100,7 +99,7 @@ The core platform. It runs the full rental lifecycle: application, contract, pay
 
 `TypeScript` · `Hono` · `Cloudflare Workers` · `D1` · `Stripe`
 
-### 🌐 [rent-web](https://github.com/aaoqqqdd/rent-web) — Marketing website
+### 🌐 [rent-web](https://github.com/Velniko/rent-web) — Marketing website
 
 A separate Worker that reads live products, prices, stock and legal documents from the platform's D1 database.
 
@@ -111,7 +110,7 @@ A separate Worker that reads live products, prices, stock and legal documents fr
 
 `TypeScript` · `Hono SSR` · `Cloudflare Workers` · `D1`
 
-### 🖥️ [rent-app](https://github.com/aaoqqqdd/rent-app) — Windows device client
+### 🖥️ [rent-app](https://github.com/Velniko/rent-app) — Windows device client
 
 Installed on every rented laptop. Binds to the platform with a 6-digit code, then talks to it only over HTTPS.
 
@@ -122,7 +121,11 @@ Installed on every rented laptop. Binds to the platform with a 6-digit code, the
 
 `C#` · `.NET 8` · `WinForms` · `Windows Service`
 
-### 📡 [MonitorFlare](https://github.com/aaoqqqdd/monitorflare) — Uptime monitoring & status page
+---
+
+## 📡 [MonitorFlare](https://github.com/aaoqqqdd/monitorflare) — Uptime monitoring & status page
+
+> Repository under **[aaoqqqdd](https://github.com/aaoqqqdd)**.
 
 An enhanced fork of Uptime-Monitor that runs entirely on the Cloudflare free tier.
 
@@ -177,11 +180,11 @@ A Chrome / Edge extension that watches Xiaohongshu for second-hand and free item
 
 ## 📁 All Repositories
 
-| Project | What it is | Stack | Account |
+| Project | What it is | Stack | Owner |
 | --- | --- | --- | --- |
-| [rent](https://github.com/aaoqqqdd/rent) | Rental management platform | TypeScript · Hono · D1 | aaoqqqdd |
-| [rent-web](https://github.com/aaoqqqdd/rent-web) | GeekSlope marketing site | Hono SSR · D1 | aaoqqqdd |
-| [rent-app](https://github.com/aaoqqqdd/rent-app) | Windows device client | C# · .NET 8 | aaoqqqdd |
+| [rent](https://github.com/Velniko/rent) | Rental management platform | TypeScript · Hono · D1 | Velniko |
+| [rent-web](https://github.com/Velniko/rent-web) | GeekSlope marketing site | Hono SSR · D1 | Velniko |
+| [rent-app](https://github.com/Velniko/rent-app) | Windows device client | C# · .NET 8 | Velniko |
 | [BossKey-Lite](https://github.com/ydnw6/BossKey-Lite) | Windows boss key | C# · WinForms | ydnw6 |
 | [HumanTyper](https://github.com/ydnw6/HumanTyper) | Human-like auto typer | C# · WinForms | ydnw6 |
 | [xhs-hunter](https://github.com/ydnw6/xhs-hunter) | Second-hand deal finder extension | JavaScript · MV3 | ydnw6 |
