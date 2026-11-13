@@ -22,7 +22,6 @@ Where my code lives:
 
 - **[`ydnw6`](https://github.com/ydnw6)** — my own open-source tools: Windows desktop apps and a browser extension
 - **[`Velniko`](https://github.com/Velniko)** — organization for GeekSlope, a computer rental business: the rental platform, its website and the device client
-- **[`aaoqqqdd`](https://github.com/aaoqqqdd)** — MonitorFlare, the uptime monitor and status page
 
 What I spend most of my time on:
 
@@ -30,7 +29,6 @@ What I spend most of my time on:
 - 💳 Payment flows with **Stripe Checkout and Webhooks**, bank transfers and refunds
 - 🖥️ Windows desktop tools in **C# / .NET**: global hotkeys, `SendInput`, Core Audio, Windows Services
 - 🧩 Browser extensions (Manifest V3) with offline OCR
-- 📡 Uptime monitoring and public status pages
 
 ---
 
@@ -120,22 +118,6 @@ Installed on every rented laptop. Binds to the platform with a 6-digit code, the
 - Runs as a Windows Service, ships with an Inno Setup installer
 
 `C#` · `.NET 8` · `WinForms` · `Windows Service`
-
----
-
-## 📡 [MonitorFlare](https://github.com/aaoqqqdd/monitorflare) — Uptime monitoring & status page
-
-> Repository under **[aaoqqqdd](https://github.com/aaoqqqdd)**.
-
-An enhanced fork of Uptime-Monitor that runs entirely on the Cloudflare free tier.
-
-- HTTP / HTTPS, DNS, TCP checks, SSL certificate and domain expiry
-- 9 notification channels plus 5 email providers
-- Public or password-protected status page, incidents, maintenance, RSS, PWA
-- Monitor detail pages with latency charts and 90-day uptime bars
-- 9 interface languages
-
-`Vue 3` · `Hono` · `Cloudflare Workers` · `D1` · `Pages`
 
 ---
 
