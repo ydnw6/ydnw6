@@ -182,7 +182,6 @@ A Chrome / Edge extension that watches Xiaohongshu for second-hand and free item
 | [rent](https://github.com/aaoqqqdd/rent) | Rental management platform | TypeScript · Hono · D1 | aaoqqqdd |
 | [rent-web](https://github.com/aaoqqqdd/rent-web) | GeekSlope marketing site | Hono SSR · D1 | aaoqqqdd |
 | [rent-app](https://github.com/aaoqqqdd/rent-app) | Windows device client | C# · .NET 8 | aaoqqqdd |
-| [monitorflare](https://github.com/aaoqqqdd/monitorflare) | Uptime monitor & status page | Vue 3 · Workers | aaoqqqdd |
 | [BossKey-Lite](https://github.com/ydnw6/BossKey-Lite) | Windows boss key | C# · WinForms | ydnw6 |
 | [HumanTyper](https://github.com/ydnw6/HumanTyper) | Human-like auto typer | C# · WinForms | ydnw6 |
 | [xhs-hunter](https://github.com/ydnw6/xhs-hunter) | Second-hand deal finder extension | JavaScript · MV3 | ydnw6 |
