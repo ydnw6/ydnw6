@@ -2,14 +2,14 @@
 
 # Hi, I'm Jiongjiong 👋
 
-### Full-Stack Developer · Cloud Infrastructure · Open Source Maintainer
+### Full-Stack Developer · Cloudflare · Windows Tools
 
-Building practical web applications, backend systems, APIs and cloud infrastructure.
+I build business systems on Cloudflare's edge, plus small Windows and browser tools that solve everyday problems.
 
 <br/>
 
-[![GitHub](https://img.shields.io/badge/GitHub-jiongjiong123441-181717?style=for-the-badge&logo=github)](https://github.com/jiongjiong123441)
-[![Projects](https://img.shields.io/badge/Projects-aaoqqqdd-181717?style=for-the-badge&logo=github)](https://github.com/aaoqqqdd)
+[![ydnw6](https://img.shields.io/badge/GitHub-ydnw6-181717?style=for-the-badge&logo=github)](https://github.com/ydnw6)
+[![aaoqqqdd](https://img.shields.io/badge/GeekSlope-aaoqqqdd-181717?style=for-the-badge&logo=github)](https://github.com/aaoqqqdd)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-Developer-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
 </div>
@@ -18,17 +18,18 @@ Building practical web applications, backend systems, APIs and cloud infrastruct
 
 ## 👨‍💻 About Me
 
-I build and maintain **full-stack web applications, backend services and cloud-based infrastructure**.
+My work is split across two GitHub accounts:
 
-My recent work focuses on building real-world systems with **Cloudflare Workers**, including rental management platforms, payment workflows, monitoring systems, APIs and public-facing web applications.
+- **[`ydnw6`](https://github.com/ydnw6)** — my own open-source tools: Windows desktop apps and a browser extension
+- **[`aaoqqqdd`](https://github.com/aaoqqqdd)** — GeekSlope, a computer rental business: the rental platform, its website, the device client and the monitoring stack
 
-- ☁️ Building serverless applications on the **Cloudflare ecosystem**
-- ⚙️ Designing backend services, APIs and business workflows
-- 💳 Working with payment systems and **Stripe Webhooks**
-- 🗄️ Building applications with **Cloudflare D1 / SQLite**
-- 📡 Developing website, API and infrastructure monitoring tools
-- 🔐 Working with authentication, permissions and application security
-- 🚀 Maintaining projects across **jiongjiong123441** and **aaoqqqdd**
+What I spend most of my time on:
+
+- ☁️ Serverless apps on **Cloudflare Workers, Pages and D1**
+- 💳 Payment flows with **Stripe Checkout and Webhooks**, bank transfers and refunds
+- 🖥️ Windows desktop tools in **C# / .NET**: global hotkeys, `SendInput`, Core Audio, Windows Services
+- 🧩 Browser extensions (Manifest V3) with offline OCR
+- 📡 Uptime monitoring and public status pages
 
 ---
 
@@ -36,177 +37,177 @@ My recent work focuses on building real-world systems with **Cloudflare Workers*
 
 <div align="center">
 
-### Languages & Frontend
+### Web
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-000?style=for-the-badge&logo=typescript)
 ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
 ![Vue.js](https://img.shields.io/badge/Vue.js-000?style=for-the-badge&logo=vuedotjs)
+![Hono](https://img.shields.io/badge/Hono-000?style=for-the-badge&logo=hono)
 ![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5)
 ![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3)
 
-### Backend & Infrastructure
+### Cloud & Backend
 
-![Node.js](https://img.shields.io/badge/Node.js-000?style=for-the-badge&logo=nodedotjs)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-000?style=for-the-badge&logo=cloudflare)
-![SQLite](https://img.shields.io/badge/SQLite-000?style=for-the-badge&logo=sqlite)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-000?style=for-the-badge&logo=githubactions)
+![SQLite](https://img.shields.io/badge/SQLite_/_D1-000?style=for-the-badge&logo=sqlite)
+![Node.js](https://img.shields.io/badge/Node.js-000?style=for-the-badge&logo=nodedotjs)
 ![Stripe](https://img.shields.io/badge/Stripe-000?style=for-the-badge&logo=stripe)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-000?style=for-the-badge&logo=githubactions)
+
+### Desktop & Extensions
+
+![C#](https://img.shields.io/badge/C%23-000?style=for-the-badge&logo=dotnet)
+![.NET](https://img.shields.io/badge/.NET-000?style=for-the-badge&logo=dotnet)
+![Windows](https://img.shields.io/badge/Windows-000?style=for-the-badge&logo=windows)
+![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-000?style=for-the-badge&logo=googlechrome)
 
 </div>
 
 <div align="center">
 
-`Cloudflare Workers` · `Cloudflare Pages` · `D1` · `Hono` · `REST APIs` · `Webhooks` · `CI/CD` · `PWA`
+`Workers` · `Pages` · `D1` · `Hono SSR` · `REST APIs` · `Webhooks` · `WinForms` · `Windows Service` · `Manifest V3` · `Tesseract.js` · `CI/CD`
 
 </div>
 
 ---
 
-# 🚀 Featured Projects
+## 🏢 GeekSlope — Computer Rental Platform
 
-## 💻 GeekSlope Rental System
+> Repositories under **[aaoqqqdd](https://github.com/aaoqqqdd)**. Four parts, one shared D1 database.
 
-A full-stack **computer rental management platform** running on Cloudflare.
+```text
+              Cloudflare D1 (shared database)
+                          │
+        ┌─────────────────┼──────────────────┐
+        │                 │                  │
+   rent-web             rent              rent-app
+   public website   platform & admin   Windows device client
+   (Hono SSR)       (Workers + Hono)   (.NET 8, via /api/device-agent)
 
-Handles the complete rental lifecycle from customer application to contract signing, payment, device delivery, return and refund.
+   monitorflare ── watches all of the above
+```
 
-### Key Features
+### 💻 [rent](https://github.com/aaoqqqdd/rent) — Rental management system
 
-- Customer / Staff / Admin workspaces
-- Device & inventory management
-- Rental order lifecycle
-- Online contract signing
-- Contract snapshots & integrity hashes
-- Stripe Checkout & Webhooks
-- Bank transfer verification
-- Deposit & refund processing
-- Damage / repair tracking
-- Invoice management
-- Referral & commission system
-- Role-based access control
-- Audit and operational workflows
+The core platform. It runs the full rental lifecycle: application, contract, payment, delivery, return, refund.
 
-### Stack
+- Customer, staff and admin workspaces with role-based access
+- Online contract signing, with contract snapshots and integrity hashes
+- Stripe Checkout and Webhooks, bank transfer proof review, account balance
+- Deposits, cancellation refunds, damage and repair charges, invoices
+- Referral program with tiered commission and withdrawals
+- **C2C marketplace**: customers list their own laptops, admins review them and set the platform commission
 
-`TypeScript` · `Hono` · `Cloudflare Workers` · `Cloudflare D1` · `Stripe` · `SQLite`
+`TypeScript` · `Hono` · `Cloudflare Workers` · `D1` · `Stripe`
 
-[![Repository](https://img.shields.io/badge/Repository-rent-181717?style=for-the-badge&logo=github)](https://github.com/aaoqqqdd/rent)
+### 🌐 [rent-web](https://github.com/aaoqqqdd/rent-web) — Marketing website
 
----
+A separate Worker that reads live products, prices, stock and legal documents from the platform's D1 database.
 
-## 🌐 GeekSlope Web
-
-Public-facing website and rental application frontend for the GeekSlope rental platform.
-
-Built as an independent Cloudflare Worker while sharing live business data with the main rental system.
-
-### Key Features
-
-- Server-side rendered website
-- Live product & pricing data
-- Online rental applications
-- Customer registration
-- Rental availability validation
-- Referral code integration
-- Cloudflare Turnstile
-- Rate limiting
-- Shared D1 data
-- Edge caching
-- Legal document integration
-
-### Stack
+- Server-side rendered, no build step, edge-cached
+- `/apply` registers the visitor and creates a rental request in one step
+- Live delivery quotes and booking via the **Zoom2u** API
+- Referral page, gift cards, SEO and an agent-discovery API catalog
 
 `TypeScript` · `Hono SSR` · `Cloudflare Workers` · `D1`
 
-[![Repository](https://img.shields.io/badge/Repository-rent--web-181717?style=for-the-badge&logo=github)](https://github.com/aaoqqqdd/rent-web)
+### 🖥️ [rent-app](https://github.com/aaoqqqdd/rent-app) — Windows device client
+
+Installed on every rented laptop. Binds to the platform with a 6-digit code, then talks to it only over HTTPS.
+
+- Heartbeat, hardware inspection snapshots before and after each rental
+- Lease countdown overlay and expiry reminders
+- Authorized remote commands, auto-update from GitHub Releases
+- Runs as a Windows Service, ships with an Inno Setup installer
+
+`C#` · `.NET 8` · `WinForms` · `Windows Service`
+
+### 📡 [MonitorFlare](https://github.com/aaoqqqdd/monitorflare) — Uptime monitoring & status page
+
+An enhanced fork of Uptime-Monitor that runs entirely on the Cloudflare free tier.
+
+- HTTP / HTTPS, DNS, TCP checks, SSL certificate and domain expiry
+- 9 notification channels plus 5 email providers
+- Public or password-protected status page, incidents, maintenance, RSS, PWA
+- Monitor detail pages with latency charts and 90-day uptime bars
+- 9 interface languages
+
+`Vue 3` · `Hono` · `Cloudflare Workers` · `D1` · `Pages`
 
 ---
 
-## 📡 MonitorFlare
+## 🧰 Open-Source Tools
 
-A self-hosted **website, API and infrastructure monitoring platform** built around the Cloudflare ecosystem.
+> Repositories under **[ydnw6](https://github.com/ydnw6)**. Free, single-file, MIT licensed.
 
-### My Recent Work
+### 🙈 [BossKey Lite · 一键隐身](https://github.com/ydnw6/BossKey-Lite)
 
-- API monitoring with **JSON response assertions**
-- HTTP / HTTPS monitoring
-- DNS and TCP monitoring
-- PING-style reachability checks
-- Configurable degraded service states
-- SSL certificate & domain expiry checks
-- Public status pages
-- Monitor detail & latency visualisation
-- Incident & maintenance management
-- Multi-channel notifications
-- Multi-language interface
-- Cloudflare CI/CD deployment
+A free boss key for Windows. One hotkey hides the windows of the programs you picked and mutes them; press it again and they come back.
 
-### Stack
+- Mutes per-app through Core Audio and sends media pause
+- Re-hides windows that pop up while hidden
+- Restores hidden windows after a crash
+- ~100 KB single exe, no install, no network
 
-`Vue 3` · `Hono` · `Cloudflare Workers` · `D1` · `Cloudflare Pages`
+`C#` · `WinForms` · `Win32` · [⬇ Download](https://github.com/ydnw6/BossKey-Lite/releases/latest/download/BossKey-Lite.exe)
 
-[![Repository](https://img.shields.io/badge/View_MonitorFlare-181717?style=for-the-badge&logo=github)](https://github.com/jiongjiong123441/monitorflare)
+### ⌨️ [HumanTyper](https://github.com/ydnw6/HumanTyper)
+
+A Windows auto-typer that types like a person: uneven rhythm, typos that get fixed, pauses to think.
+
+- Chinese words typed through pinyin, English paced by WPM
+- Scan-code mode for remote desktop, ToDesk, Sunlogin and VMs
+- Pauses when you move the cursor and resumes when you put it back
+- Reads the text back afterwards and fixes anything missed
+
+`C#` · `.NET Framework` · `SendInput` · [⬇ Download](https://github.com/ydnw6/HumanTyper/releases/latest)
+
+### 🔎 [xhs-hunter · 捡漏雷达](https://github.com/ydnw6/xhs-hunter)
+
+A Chrome / Edge extension that watches Xiaohongshu for second-hand and free items by city and budget. Built for students living overseas.
+
+- Several search tasks in parallel background tabs
+- Reads prices like `💰 2199`, `1199🔪`, `A$1,300` and converts currencies
+- Finds prices in the post body, the seller's comments or images (offline OCR)
+- Skips sold posts, then pushes matches to ntfy, Bark, Telegram or ServerChan
+
+`JavaScript` · `Manifest V3` · `Tesseract.js` · [⬇ Download](https://github.com/ydnw6/xhs-hunter/releases/download/latest/xhs-hunter-latest.zip)
+
+---
+
+## 📁 All Repositories
+
+| Project | What it is | Stack | Account |
+| --- | --- | --- | --- |
+| [rent](https://github.com/aaoqqqdd/rent) | Rental management platform | TypeScript · Hono · D1 | aaoqqqdd |
+| [rent-web](https://github.com/aaoqqqdd/rent-web) | GeekSlope marketing site | Hono SSR · D1 | aaoqqqdd |
+| [rent-app](https://github.com/aaoqqqdd/rent-app) | Windows device client | C# · .NET 8 | aaoqqqdd |
+| [monitorflare](https://github.com/aaoqqqdd/monitorflare) | Uptime monitor & status page | Vue 3 · Workers | aaoqqqdd |
+| [BossKey-Lite](https://github.com/ydnw6/BossKey-Lite) | Windows boss key | C# · WinForms | ydnw6 |
+| [HumanTyper](https://github.com/ydnw6/HumanTyper) | Human-like auto typer | C# · WinForms | ydnw6 |
+| [xhs-hunter](https://github.com/ydnw6/xhs-hunter) | Second-hand deal finder extension | JavaScript · MV3 | ydnw6 |
 
 ---
 
-## 🧩 What I Work On
-
-```text
-Frontend
-├── Vue
-├── HTML / CSS
-└── Server-Side Rendering
-
-Backend
-├── TypeScript
-├── Hono
-├── REST APIs
-├── Authentication
-├── Webhooks
-└── Business Logic
-
-Cloud
-├── Cloudflare Workers
-├── Cloudflare Pages
-├── Cloudflare D1
-├── Edge Caching
-└── CI/CD
-
-Systems
-├── Payment Processing
-├── Rental Management
-├── Monitoring
-├── Status Pages
-├── RBAC
-└── Audit & Security
-```
-
----
-## 📈 Development Activity
-
-I actively maintain projects across two GitHub accounts:
-
-- [`jiongjiong123441`](https://github.com/jiongjiong123441) — personal and open-source projects
-- [`aaoqqqdd`](https://github.com/aaoqqqdd) — GeekSlope and production projects
+## 📈 Activity
 
 <div align="center">
 
 <img
-  src="https://github-readme-activity-graph-841k2snp8.vercel.app/graph?username=jiongjiong123441&theme=github-compact&hide_border=true&area=true"
+  src="https://github-readme-activity-graph.vercel.app/graph?username=ydnw6&theme=github-compact&hide_border=true&area=true"
   width="95%"
-  alt="Jiongjiong's Contribution Activity Graph"
+  alt="Contribution activity graph"
 />
 
 </div>
+
 ---
 
 ## 🔨 Currently Building
 
-**GeekSlope**  
-→ rental management · payments · contracts · customer workflows · device management
-
-**MonitorFlare**  
-→ uptime monitoring · API monitoring · infrastructure reliability · status pages
+- **GeekSlope** → C2C device marketplace · delivery integration · device client
+- **Desktop tools** → BossKey · HumanTyper
+- **xhs-hunter** → better price recognition and fewer requests
 
 ---
 
@@ -216,6 +217,6 @@ I actively maintain projects across two GitHub accounts:
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=jiongjiong123441&style=flat-square&label=Profile+Views)
+![Profile Views](https://komarev.com/ghpvc/?username=ydnw6&style=flat-square&label=Profile+Views)
 
 </div>
