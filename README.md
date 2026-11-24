@@ -11,6 +11,7 @@ I build business systems on Cloudflare's edge, plus small Windows and browser to
 [![ydnw6](https://img.shields.io/badge/GitHub-ydnw6-181717?style=for-the-badge&logo=github)](https://github.com/ydnw6)
 [![Velniko](https://img.shields.io/badge/GeekSlope-Velniko-181717?style=for-the-badge&logo=github)](https://github.com/Velniko)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-Developer-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+[![Afdian](https://img.shields.io/badge/Afdian-爱发电支持-946CE6?style=for-the-badge&logo=buymeacoffee&logoColor=white)](https://ifdian.net/a/ydnw6)
 
 </div>
 
