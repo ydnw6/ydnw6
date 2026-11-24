@@ -205,3 +205,8 @@ A Chrome / Edge extension that watches Xiaohongshu for second-hand and free item
 ![Profile Views](https://komarev.com/ghpvc/?username=ydnw6&style=flat-square&label=Profile+Views)
 
 </div>
+---
+
+### Build systems that solve real problems.
+
+If my open-source tools save you time, consider supporting me on **[Afdian (爱发电)](https://ifdian.net/a/ydnw6)** ☕
